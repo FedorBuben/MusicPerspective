@@ -1,0 +1,42 @@
+<!doctype html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Music Perspective</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Music Perspective</h1>
+
+    <p>Master angle:</p>
+    <input
+        id="master-angle"
+        type="range"
+        min="-90"
+        max="90"
+        step="1"
+        value="0"
+    />
+    <p>Gyroscope alpha:<p id="gyroscope_alpha">---</p></p>
+    <button onclick="play_all()">Play all</button>
+    <br />
+    <button onclick="start_gyroscope()">Request permission</button>
+
+    <audio src="audio/FromInside/Bass.wav" id="track_0"></audio>
+    <audio src="audio/FromInside/Drums.wav" id="track_1"></audio>
+    <audio src="audio/FromInside/Rythm Guitar Center.wav" id="track_2"></audio>
+    <audio src="audio/FromInside/Reverb.wav" id="track_3"></audio>
+    <audio src="audio/FromInside/Lead Guitar.wav" id="track_4"></audio>
+    <audio src="audio/FromInside/Rythm Guitar Left.wav" id="track_5"></audio>
+    <audio src="audio/FromInside/Delay Guitar.wav" id="track_6"></audio>
+    <audio src="audio/FromInside/MIDI Guitar.wav" id="track_7"></audio>
+    <audio src="audio/FromInside/Rythm Guitar Right.wav" id="track_8"></audio>
+    <audio src="audio/FromInside/Double Drums.wav" id="track_9"></audio>
+    <audio src="audio/FromInside/Clean Guitar.wav" id="track_10"></audio>
+
+    <script src="script.js"></script>
+    <script src="sensors.js"></script>
+
+    <body></body>
+</body>
